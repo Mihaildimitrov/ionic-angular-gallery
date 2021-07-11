@@ -1,0 +1,58 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Въпроси и отговори</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+  <div class="page-wrap-container q-a-container">
+
+    <h1>Въпроси и отговори</h1>
+
+    <div class="questions-view">
+
+      <ion-button expand="full" (click)="question_1 = !question_1" type="button">Въпрос 1</ion-button>
+      <div class="answer-box" *ngIf="question_1">
+        Отговор 1
+      </div>
+
+      <ion-button expand="full" (click)="question_2 = !question_2" type="button">Въпрос 2</ion-button>
+      <div class="answer-box" *ngIf="question_2">
+        Отговор 2
+      </div>
+
+      <ion-button expand="full" (click)="question_3 = !question_3" type="button">Въпрос 3</ion-button>
+      <div class="answer-box" *ngIf="question_3">
+        Отговор 3
+      </div>
+
+      <ion-button expand="full" (click)="question_4 = !question_4" type="button">Въпрос 4</ion-button>
+      <div class="answer-box" *ngIf="question_4">
+        Отговор 4
+      </div>
+
+      <ion-button expand="full" (click)="question_5 = !question_5" type="button">Въпрос 5</ion-button>
+      <div class="answer-box" *ngIf="question_5">
+        Отговор 5
+      </div>
+
+    </div>
+
+    <p>Текст тук!</p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati corrupti explicabo, sequi nostrum minus esse
+      voluptates at voluptatem. Necessitatibus sequi quisquam nostrum ea! Similique aliquam, voluptates blanditiis magni
+      explicabo a.
+    </p>
+
+
+  </div>
+
+  <div class="page-background-container">
+    <img class="frame-img" src="./../../../../assets/images/frame.jpg" alt="">
+  </div>
+</ion-content>

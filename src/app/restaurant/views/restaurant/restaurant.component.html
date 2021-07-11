@@ -1,0 +1,57 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Ресторант</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+
+  <div *ngIf="!loading" class="page-wrap-container program-container">
+
+    <h1>Ресторант / Меню</h1>
+
+    <p>Текст тук!</p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati corrupti explicabo, sequi nostrum minus esse
+      voluptates at voluptatem. Necessitatibus sequi quisquam nostrum ea! Similique aliquam, voluptates blanditiis magni
+      explicabo a.
+    </p>
+
+    <form [formGroup]="form" class="app-form">
+
+      <ion-item>
+        <ion-label position="stacked">Име*</ion-label>
+        <ion-input formControlName="name"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Имейл*</ion-label>
+        <ion-input formControlName="email" type="email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Tema*</ion-label>
+        <ion-input formControlName="topic"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Съобщение*</ion-label>
+        <ion-textarea formControlName="message" rows="10"></ion-textarea>
+      </ion-item>
+
+      <div style="text-align: center;">
+        <ion-button (click)="send()" type="button" [disabled]="!form.valid">Изпрати</ion-button>
+      </div>
+
+
+    </form>
+
+  </div>
+
+  <div class="page-background-container">
+    <img class="frame-img" src="./../../../../assets/images/frame_2.jpg" alt="">
+  </div>
+</ion-content>

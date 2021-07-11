@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Начало</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+
+  <div class="home-container">
+
+    <img src="./../../../../assets/images/home_1.jpeg" alt="">
+    <div class="home-data">
+
+
+      <div *ngIf="timeDifference > 0" class="countdown-box">
+        <div class="timer">
+          <div class="countdown-box">
+            <span id="days" class="value">{{daysToDday}}</span>
+            <span class="label">Дни</span>
+          </div>
+          <div class="countdown-box">
+            <span id="hours" class="value">{{hoursToDday}}</span>
+            <span class="label">Часа</span>
+          </div>
+          <div class="countdown-box">
+            <span id="minutes" class="value">{{minutesToDday}}</span>
+            <span class="label">Минути</span>
+          </div>
+          <div class="countdown-box">
+            <span id="seconds" class="value">{{secondsToDday}}</span>
+            <span class="label">Секунди</span>
+          </div>
+        </div>
+      </div>
+
+      <div *ngIf="timeDifference < 0" class="event-active">
+         Днес се женят
+      </div>
+
+      <div class="coule-names-box">
+        <div class="name-value">Димитър</div>
+        <div class="names-and-char">&</div>
+        <div class="name-value">Ванина</div>
+      </div>
+
+    </div>
+
+  </div>
+
+</ion-content>

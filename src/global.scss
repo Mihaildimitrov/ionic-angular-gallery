@@ -1,0 +1,161 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+@font-face {
+  font-family: "Bikham Cyr Script";
+  src: url("https://db.onlinewebfonts.com/t/f59eaf59bc17f936c56a64153ba93356.eot");
+  /* IE9*/
+  src: url("https://db.onlinewebfonts.com/t/f59eaf59bc17f936c56a64153ba93356.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */
+    url("https://db.onlinewebfonts.com/t/f59eaf59bc17f936c56a64153ba93356.woff2") format("woff2"),
+    /* chrome firefox */
+    url("https://db.onlinewebfonts.com/t/f59eaf59bc17f936c56a64153ba93356.woff") format("woff"),
+    /* chrome firefox */
+    url("https://db.onlinewebfonts.com/t/f59eaf59bc17f936c56a64153ba93356.ttf") format("truetype"),
+    /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("https://db.onlinewebfonts.com/t/f59eaf59bc17f936c56a64153ba93356.svg#Bikham Cyr Script") format("svg");
+  /* iOS 4.1- */
+}
+
+:root {
+  --ion-toolbar-background: #FECCCB;
+}
+
+body {
+  // font-family: "Bikham Cyr Script";
+  font-size: 16px;
+  // color: #E7B696;
+  // color: #E6E6E5;
+  // color: #D3A494;
+
+
+  .toolbar-title-default {
+    // color: #BC865E;
+    color: #fff;
+  }
+
+  ion-menu-button {
+    // color: #BC865E;
+    color: #fff;
+  }
+
+  ion-menu {
+    --ion-background-color: #FECCCB;
+    --ion-text-color: var(--ion-color-primary-contrast);
+
+    ion-toolbar {
+      --background: #FECCCB;
+    }
+
+    ion-list {
+      /* optional, but it needs when you use gradient as a background color.*/
+      background: transparent;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      ion-item {
+        font-size: 1rem;
+
+        &.selected {
+          color: #BC865E;
+
+          ion-icon {
+            color: #BC865E;
+          }
+        }
+
+        ion-icon {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  ion-tab-bar {
+    ion-tab-button {
+      background: #FECCCB;
+      color: #fff;
+
+      &.tab-selected {
+        color: #BC865E;
+      }
+    }
+  }
+
+  .page-wrap-container {
+    z-index: 2;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+    background: transparent;
+    color: #BC865E;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+
+  .page-background-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .app-form {
+    ion-input {
+      --background: transperant;
+    }
+
+    ion-item {
+      --ion-item-background: rgba(255, 255, 255, 0.6);
+      border: 1px solid #BC865E;
+      border-radius: 1rem;
+      margin: 1rem auto;
+      color: #BC865E;
+      text-shadow: 1px 1px 1px #fff;
+      font-size: 1rem;
+    }
+
+    ion-button {
+      --background: #BC865E;
+    }
+
+  }
+}

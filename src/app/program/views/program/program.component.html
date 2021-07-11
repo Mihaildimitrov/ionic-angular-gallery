@@ -1,0 +1,183 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Програма</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+  <div class="page-wrap-container program-container">
+
+    <div class="header">
+      <h1>Нашият сватбен ден</h1>
+      <p>Ето как този ден ще протече</p>
+    </div>
+
+    <div class="program-list">
+
+      <ion-grid>
+
+        <ion-row class="program-item">
+          <ion-col class="time-box" size="3">
+            <div class="time-value">10:00</div>
+            <div class="line-bellow"></div>
+            <div class="time-value time-end">10:30</div>
+          </ion-col>
+          <ion-col class="details-box" size="9">
+            <h2>Взимане на Кумовете и Булката</h2>
+            <div class="place-box" (click)="mapsSelector(42.7380817, 23.3010266)">
+              <ion-icon name="map"></ion-icon>
+              Бургас, ул. Централна
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="program-divider-item">
+          <ion-col class="divider">
+            <img src="./../../../../assets/images/program-divider_2.svg" alt="">
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="program-item">
+          <ion-col class="time-box" size="3">
+            <div class="time-value">11:00</div>
+            <div class="line-bellow"></div>
+            <div class="time-value time-end">12:00</div>
+          </ion-col>
+          <ion-col class="details-box" size="9">
+            Сключване на Граждански Брак
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="program-divider-item">
+          <ion-col class="divider">
+            <img src="./../../../../assets/images/program-divider_2.svg" alt="">
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="program-item">
+          <ion-col class="time-box" size="3">
+            <div class="time-value">13:00</div>
+            <div class="line-bellow"></div>
+            <div class="time-value time-end">13:30</div>
+          </ion-col>
+          <ion-col class="details-box" size="9">
+            Сключване на Църковен Брак
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="program-divider-item">
+          <ion-col class="divider">
+            <img src="./../../../../assets/images/program-divider_2.svg" alt="">
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="program-item">
+          <ion-col class="time-box" size="3">
+            <div class="time-value">14:00</div>
+            <div class="line-bellow"></div>
+            <div class="time-value time-end">14:30</div>
+          </ion-col>
+          <ion-col class="details-box" size="9">
+            Сватбена Фотосесия
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="program-divider-item">
+          <ion-col class="divider">
+            <img src="./../../../../assets/images/program-divider_2.svg" alt="">
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="program-item">
+          <ion-col class="time-box" size="3">
+            <div class="time-value">15:00</div>
+            <div class="line-bellow"></div>
+            <div class="time-value time-end">15:30</div>
+          </ion-col>
+          <ion-col class="details-box" size="9">
+            Изнесен Ритуал
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="program-divider-item">
+          <ion-col class="divider">
+            <img src="./../../../../assets/images/program-divider_2.svg" alt="">
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="program-item">
+          <ion-col class="time-box" size="3">
+            <div class="time-value">17:00</div>
+            <div class="line-bellow"></div>
+            <div class="time-value time-end">17:40</div>
+          </ion-col>
+          <ion-col class="details-box" size="9">
+            Коктейл/Welcome Drink
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="program-divider-item">
+          <ion-col class="divider">
+            <img src="./../../../../assets/images/program-divider_2.svg" alt="">
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="program-item">
+          <ion-col class="time-box" size="3">
+            <div class="time-value">19:30</div>
+            <div class="line-bellow"></div>
+            <div class="time-value time-end"> - </div>
+          </ion-col>
+          <ion-col class="details-box" size="9">
+            Сервиране на Вечерята
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="program-divider-item">
+          <ion-col class="divider">
+            <img src="./../../../../assets/images/program-divider_2.svg" alt="">
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="program-item">
+          <ion-col class="time-box" size="3">
+            <div class="time-value">23:00</div>
+            <div class="line-bellow"></div>
+            <div class="time-value time-end"> - </div>
+          </ion-col>
+          <ion-col class="details-box" size="9">
+            Разрязване на Сватбената Торта
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="program-divider-item">
+          <ion-col class="divider">
+            <img src="./../../../../assets/images/program-divider_2.svg" alt="">
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="program-item">
+          <ion-col class="time-box" size="3">
+            <div class="time-value">23:30</div>
+            <div class="line-bellow"></div>
+            <div class="time-value time-end"> - </div>
+          </ion-col>
+          <ion-col class="details-box" size="9">
+            Свободна Програма
+          </ion-col>
+        </ion-row>
+
+      </ion-grid>
+
+    </div>
+
+  </div>
+
+  <div class="page-background-container">
+    <img class="frame-img" src="./../../../../assets/images/frame_2.jpg" alt="">
+  </div>
+
+</ion-content>

@@ -1,0 +1,87 @@
+.program-container {
+
+  .header {
+    text-align: center;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      opacity: 0.6;
+    }
+  }
+
+  .program-list {
+
+    .program-divider-item {
+      .divider {
+        text-align: center;
+        height: 5vh;
+      }
+
+      img {
+        height: 100%;
+      }
+    }
+
+    .program-item {
+      margin: 0 auto 1rem auto;
+      min-height: 10vh;
+
+      .time-box {
+        text-align: center;
+
+        .time-value {
+          font-size: 0.9rem;
+          opacity: 0.8;
+          padding: 0.5rem 0;
+        }
+
+        .time-end {
+          opacity: 0.5;
+          font-size: 0.7rem;
+        }
+
+        .line-bellow {
+          width: 1px;
+          height: 90%;
+          border: 1px solid #FECCCB;
+          text-align: center;
+          position: relative;
+          left: 50%;
+          margin-left: -2px;
+          content: "";
+        }
+      }
+
+      .details-box {
+        text-align: left;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        h2 {
+          font-size: 1rem;
+        }
+
+        .place-box {
+          font-size: 0.8rem;
+          justify-content: flex-start;
+          display: flex;
+          width: 100%;
+          align-items: center;
+          font-weight: normal;
+          margin-top: 1rem;
+
+          ion-icon {
+            font-size: 1.1rem;
+            margin-right: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
